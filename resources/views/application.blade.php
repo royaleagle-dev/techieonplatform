@@ -134,8 +134,8 @@
               </p>
               <div class="space-y-2.5">
                 <label class="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" name="preferred_start_date" value="2026-11-30" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
-                  <span class="text-sm text-gray-700">30 November 2026</span>
+                  <input type="radio" name="preferred_start_date" value="2026-11-02" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">2 November 2026</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer">
                   <input type="radio" name="preferred_start_date" value="2027-02-28" required class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
@@ -222,14 +222,15 @@
             <!-- Scholarship Code -->
             <div class="bg-white rounded-2xl border border-gray-100 p-5">
               <label for="scholarship-code" class="block text-sm font-semibold text-gray-900 mb-1">
-                Scholarship Code <span class="text-gray-400 font-normal">(optional)</span>
+                Scholarship Code 
+                <!-- <span class="text-gray-400 font-normal">(optional)</span> -->
               </label>
               <p class="text-xs text-gray-500 mb-2">If you have a referral or sponsor code, enter it here.</p>
               <input
                 id="scholarship-code"
                 name="scholarshipCode"
                 type="text"
-                placeholder="e.g. Thevictoa * (No 22)"
+                placeholder="e.g. thevicoyet * (No 22)"
                 class="w-full border-0 border-b border-gray-200 pb-2 text-sm focus:outline-none focus:border-brand-dark transition"
               />
             </div>
@@ -335,6 +336,76 @@
                 </label>
               </div>
             </div>
+
+            <!-- Program -->
+            <div class="bg-white rounded-2xl border border-gray-100 p-5">
+              <p class="text-sm font-semibold text-gray-900 mb-3">
+                What would you like to apply for? <span class="text-red-500">*</span>
+              </p>
+              <div class="space-y-2.5">
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Frontend Development" required class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Frontend Development</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Backend Development" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Backend Development</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Data Science" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Data Science</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="AI & Automation" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">AI & Automation</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Cybersecurity" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Cybersecurity</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Data Analytics" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Data Analytics</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Cloud Computing" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Cloud Computing</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Product Design (UI & UX)" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Product Design (UI & UX)</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Digital Marketing" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Digital Marketing</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Product Management" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Product Management</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Graphic Design" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Graphics Design</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Software Development" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Software Development</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Virtual Assistant" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Virtual Assistant</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="DevOps Engineering" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">DevOps Engineering</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="program" value="Social Media Marketing" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">Social Media Marketing</span>
+                </label>
+              </div>
+            </div>
+
           </div>
 
           <div class="mt-8 flex justify-between">
@@ -462,6 +533,8 @@
       const city = document.querySelector('input[name="city"]:checked');
       const preferred_start_date = document.querySelector('input[name="preferred_start_date"]:checked');
       const educational_level = document.querySelector('input[name="educational_level"]:checked');
+      
+      const program = document.querySelector('input[name="program"]:checked');
       return {
         firstName: document.getElementById('first-name').value.trim(),
         lastName: document.getElementById('last-name').value.trim(),
@@ -476,6 +549,8 @@
         city: city ? city.value: '',
         preferred_start_date: preferred_start_date? preferred_start_date.value: '',
         educational_level: educational_level? educational_level.value: '',
+
+        program: program?program.value:'',
       };
     }
 
@@ -526,6 +601,7 @@
     document.getElementById('back-3')?.addEventListener('click', () => goToStep(2));
 
     async function submitForm(formData){
+      
       const request = await fetch("/api/applicants", {
         method: 'POST',
         body: JSON.stringify(formData),
@@ -541,6 +617,13 @@
         document.getElementById('success-panel').classList.remove('hidden');
         document.getElementById('progress-bar').style.width = '100%';
         document.getElementById('step-indicator').textContent = 'Complete';
+        localStorage.setItem('auth_token', response.token);
+        localStorage.setItem('user_email', response.data.user.email);
+        localStorage.setItem('first_name', document.querySelector("#first-name").value)
+        localStorage.setItem('last_name', document.querySelector("#last-name").value)
+        console.log('User logged in successfully!', response.data.user);
+        // Redirect to user create-password page
+        window.location.href = '/create-password';
       }else{
         alert("An error occured. Please try again");
       }
@@ -551,7 +634,7 @@
     let paymentSuccessfulStatus = '';
     let GL_paymentReference = '';
 
-    // Form submit — collect all values into an object and log to console
+    // Form submit - collect all values into an object and submit
     document.getElementById('application-form')?.addEventListener('submit', (e) => {
       e.preventDefault();
       const formData = getFormData();
@@ -577,15 +660,15 @@
 function payWithPaystack() {
   let paymentReference = '' + Math.floor((Math.random() * 1000000000) + 1);
   let handler = PaystackPop.setup({
-    key: 'pk_live_001cc579a5f2776e0889a588c201afd796f7d291', // Replace with your Paystack Public Key
-    // key: 'pk_test_0de89e35f856e52b6a8a803962a86c3f2f6cf888',
+    // key: 'pk_live_001cc579a5f2776e0889a588c201afd796f7d291',
+    key: 'pk_test_0de89e35f856e52b6a8a803962a86c3f2f6cf888',
     email: getFormData()['email'],          // Replace with the user's email input dynamically if needed
     amount: 25000 * 100,                  // Paystack accepts amount in kobo (10,000 Naira * 100)
     currency: 'NGN',                      // Change to your preferred currency (e.g., GHS, USD)
     ref: paymentReference, // Generates a unique reference
     callback: function(response) {
       // This runs after a successful payment
-      alert('Payment complete! Reference: ' + response.reference);
+      // alert('Payment complete! Reference: ' + response.reference);
       // TODO: Send the reference to your server to verify the transaction
       paymentSuccessfulStatus = "paid";
       GL_paymentReference = paymentReference;

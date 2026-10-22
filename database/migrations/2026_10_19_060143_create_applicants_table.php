@@ -28,7 +28,7 @@ return new class extends Migration
             $table->date('preferred_start_date')->nullable();
             $table->string('payment_ref')->nullable();
             $table->string('payment_status')->nullable();
-            // $table->string('program')->nullable();
+            $table->string('program')->nullable();
             // $table->string('tech_experience')->nullable();
 
             $table->timestamps();

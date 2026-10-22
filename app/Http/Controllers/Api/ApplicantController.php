@@ -6,6 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Models\Applicant;
 use Illuminate\Http\Request;
 
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Str;
+
 class ApplicantController extends Controller
 {
     public function store(Request $request)
@@ -26,9 +30,18 @@ class ApplicantController extends Controller
             'preferred_start_date' => 'required|date|max:255',
             'payment_status' => 'string',
             'payment_ref' => 'string',
+            'program' => 'string|max:255|required',
             // 'tech_experience' => 'required|string|max:255',
             // 'program' => 'required|string|max:255',
         ]);
+
+        $user = User::firstOrCreate(
+            ['email' => $validated['email']],
+            [
+                'name'     => $validated['firstName'] . ' ' . $validated['lastName'],
+                'password' => Hash::make(Str::random(12)), // Generates a secure temporary password
+            ]
+        );
 
         // Map camelCase request inputs to your snake_case database columns
         $applicant = Applicant::create([
@@ -47,17 +60,31 @@ class ApplicantController extends Controller
             'preferred_start_date' => $validated['preferred_start_date'],
             'payment_status' => $validated['payment_status'],
             'payment_ref' => $validated['payment_ref'],
+            'program' => $validated['program'],
             // 'tech_experience' => $validated['tech_experience'],
-            // 'program' => $validated['program'],
 
         ]);
 
-        // Return a JSON response
+        // 4. Generate an authentication token for the user
+        $token = $user->createToken('applicant_auth_token')->plainTextToken;
+
+        // 5. Return JSON response including the token
         return response()->json([
             'success' => true,
-            'message' => 'Applicant registered successfully!',
-            'data'    => $applicant
+            'message' => 'Applicant registered and logged in successfully!',
+            'token'   => $token, // <--- Send token to frontend
+            'data'    => [
+                'applicant' => $applicant,
+                'user'      => $user,
+            ]
         ], 201);
+
+        // Return a JSON response
+        // return response()->json([
+        //     'success' => true,
+        //     'message' => 'Applicant registered successfully!',
+        //     'data'    => $applicant
+        // ], 201);
     }
 }
 

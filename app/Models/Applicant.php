@@ -21,8 +21,8 @@ class Applicant extends Model
         'preferred_start_date',
         'payment_status',
         'payment_ref',
+        'program',
         // 'tech_experience',
-        // 'program',
     ];
 
     protected $casts = [
