@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- ========== HERO ========== -->
+
   <section class="bg-brand-dark text-white relative overflow-hidden pt-16 md:pt-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
       <div class="grid lg:grid-cols-2 gap-10 items-center">
@@ -15,7 +15,7 @@
           </p>
         </div>
 
-        <!-- Right images -->
+        
         <div class="relative flex justify-center lg:justify-end gap-4 sm:gap-6">
           <img src="assets/images/courses_hero.png" class="min-w-[400px]">
         </div>
@@ -23,7 +23,7 @@
     </div>
   </section>
 
-  <!-- ========== SEARCH + FILTER ========== -->
+  
   <section class="bg-white border-b border-gray-100 sticky top-16 md:top-20 z-40">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
       <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center">
@@ -68,7 +68,7 @@
     </div>
   </section>
 
-  <!-- ========== COURSES GRID ========== -->
+  
   <main class="bg-gray-50/50 py-10 md:py-7">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
 
@@ -451,7 +451,7 @@
     </div>
   </main>
 
-  <!-- ========== WOMAN IN TECH ========== -->
+  
   <section class="bg-white py-14 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">

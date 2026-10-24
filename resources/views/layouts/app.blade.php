@@ -149,7 +149,7 @@
           </div>
         </nav>
 
-          <a href="#" class="text-sm font-medium text-white/90 hover:text-white hidden sm:inline">Sign in</a>
+          <a href="{{ route('user-login') }}" class="text-sm font-medium text-white/90 hover:text-white hidden sm:inline">Sign in</a>
           
           <a href="{{ route('apply') }}" class="bg-brand-lime text-brand-dark text-sm font-semibold px-4 py-2 rounded-lg hover:bg-brand-yellow transition">
             Apply For Scholarship
@@ -172,7 +172,7 @@
         <a href="{{ route('courses') }}" class="px-3 py-2 rounded-lg text-sm font-medium text-white/90">Courses</a>
         <a href="{{ route('solutions') }}" class="px-3 py-2 rounded-lg text-sm font-medium text-white/90">Solutions</a>
         <a href="{{ route('about') }}" class="px-3 py-2 rounded-lg text-sm font-medium text-white/90">About</a>
-        <a href="#" class="px-3 py-2 rounded-lg text-sm font-medium text-white/90">Sign in</a>
+        <a href="{{ route('user-login') }}" class="px-3 py-2 rounded-lg text-sm font-medium text-white/90">Sign in</a>
       </div>
     </div>
   </header>
@@ -240,7 +240,7 @@
             <li><a href="#courses" class="text-white/80 hover:text-white transition">Courses</a></li>
             <li><a href="#solutions" class="text-white/80 hover:text-white transition">Solutions</a></li>
             <li><a href="#about" class="text-white/80 hover:text-white transition">About</a></li>
-            <li><a href="#" class="text-white/80 hover:text-white transition">Sign in</a></li>
+            <li><a href="{{ route('user-login') }}" class="text-white/80 hover:text-white transition">Sign in</a></li>
             <li><a href="#scholarship" class="text-white/80 hover:text-white transition">Apply For Scholarship</a></li>
           </ul>
         </div>

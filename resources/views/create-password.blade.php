@@ -201,11 +201,13 @@
       }
 
       const formData = {
-        email,
-        newPassword,
-        confirmPassword,
+        'emal': email,
+        'password': newPassword,
+        'password_confirmation':confirmPassword,
       };
+      
       console.log('Password created:', formData);
+      submitPassword(formData);
 
       // Success feedback (replace with redirect in production)
       errorEl.classList.remove('text-red-600');
@@ -213,5 +215,23 @@
       errorEl.textContent = 'Password created successfully. Redirecting…';
       errorEl.classList.remove('hidden');
     });
+
+    async function submitPassword(formData){
+        const token = localStorage.get_item('auth_token');
+        const request = await fetch("/api/user/create-password", {
+            method: "POST",
+            body: JSON.stringify(formData);
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json',
+                'Authorization': `Bearer ${token}` // Pass Sanctum token here
+            },
+        })
+
+        const response = await request.json();
+        if(response.success == 'true'){
+          window.location = "{{ route('course-detail') }}"
+        }
+    }
   </script>
 @endsection

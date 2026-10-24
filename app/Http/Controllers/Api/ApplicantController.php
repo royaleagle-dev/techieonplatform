@@ -12,6 +12,24 @@ use Illuminate\Support\Str;
 
 class ApplicantController extends Controller
 {
+    
+    public function getByEmail(Request $request){
+        $request->validate([
+            'email' => 'required|email',
+        ]);
+        $applicant = Applicant::where('email', $request->query('email'))->first();
+        if (!$applicant) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Applicant record not found for this email.',
+            ], 404);
+        }
+        return response()->json([
+            'success' => true,
+            'data'    => $applicant,
+        ], 200);
+    }
+    
     public function store(Request $request)
     {
         // Validate incoming request using camelCase keys

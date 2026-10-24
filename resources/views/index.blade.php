@@ -27,44 +27,12 @@
         <!-- Right images collage -->
         <div class="relative flex justify-center lg:justify-end">
           <img src="/assets/images/hero_image.png" class="min-w-[400px]">
-
-          <!-- <div class="relative w-full max-w-md">
-            
-            <div class="hero-img-frame overflow-hidden w-48 sm:w-56 mx-auto relative z-10">
-              <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=faces"
-                alt="Young professional with tablet"
-                class="w-full h-72 sm:h-80 object-cover"
-              />
-            </div>
-            
-            <div class="absolute -top-4 right-4 sm:right-8 w-20 h-20 sm:w-24 sm:h-24 rounded-full overflow-hidden border-2 border-brand-lime/40 shadow-lg z-20">
-              <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=faces"
-                alt="Woman smiling"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            
-            <div class="absolute bottom-8 -right-2 sm:right-0 w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-2 border-brand-lime/30 shadow-xl z-20">
-              <img
-                src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=faces"
-                alt="Woman with tablet"
-                class="w-full h-full object-cover"
-              />
-            </div>
-            
-            <div class="absolute bottom-4 left-0 sm:left-4 bg-brand-lime text-brand-dark text-xs font-semibold px-3 py-1.5 rounded-full shadow z-20">
-              200+ learners trained
-            </div>
-          </div> -->
-        
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== FREE SCHOLARSHIP BANNER ========== -->
+  
   <section id="scholarship" class="bg-white py-10 md:py-14">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="rounded-3xl overflow-hidden bg-gradient-to-r from-gray-50 to-brand-purple/30 flex flex-col lg:flex-row shadow-sm border border-gray-100" style="min-height:500px;">
@@ -111,7 +79,7 @@
     </div>
   </section>
 
-  <!-- ========== READY TO BUILD ========== -->
+  
 <section id="solutions" class="bg-[#C8F060] py-14 md:py-20">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid lg:grid-cols-2 gap-10 items-center">
@@ -162,7 +130,7 @@
   </div>
 </section>
 
-  <!-- ========== DEMANDED PROGRAMS ========== -->
+  
   <section id="courses" class="bg-gray-50 py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
@@ -241,7 +209,7 @@
     </div>
   </section>
 
-  <!-- ========== FROM APPLICATION TO FIRST ROLE ========== -->
+  
   <section class="bg-white py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-12 items-center">
@@ -302,7 +270,7 @@
     </div>
   </section>
 
-  <!-- ========== TESTIMONIALS ========== -->
+  
   <section class="bg-brand-dark text-white py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
@@ -364,7 +332,7 @@
     </div>
   </section>
 
-  <!-- ========== SPONSOR TALENTS ========== -->
+  
   <section class="bg-white py-16 md:py-20">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="rounded-3xl overflow-hidden bg-sponsor-purple text-white flex flex-col lg:flex-row">
@@ -388,23 +356,6 @@
         <!-- Right imagee -->
         <div class="lg:w-1/2 relative p-6 md:p-8 flex items-center justify-center gap-4 min-h-[280px] bg-gray-200">
           <img src="/assets/images/sponsorship.png" style="width:100%;height:auto;">
-          <!-- <div class="relative">
-            <div class="w-40 sm:w-48 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
-              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop&crop=faces" alt="Young man with headphones" class="w-full h-56 object-cover" />
-            </div>
-            <div class="absolute -top-3 -right-3 bg-white text-sponsor-purple text-xs font-semibold px-3 py-1.5 rounded-full shadow flex items-center gap-1">
-              <span class="text-emerald-500">●</span> Transform a life!
-            </div>
-          </div>
-          <div class="relative mt-12">
-            <div class="w-36 sm:w-44 rounded-2xl overflow-hidden shadow-2xl border-4 border-white/20">
-              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop&crop=faces" alt="Young woman learning" class="w-full h-52 object-cover" />
-            </div>
-            <div class="absolute -bottom-3 left-1/2 -translate-x-1/2 bg-white text-sponsor-purple text-xs font-semibold px-3 py-1.5 rounded-full shadow flex items-center gap-1 whitespace-nowrap">
-              <svg class="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-              Necessary skills
-            </div>
-          </div> -->
         </div>
       </div>
     </div>

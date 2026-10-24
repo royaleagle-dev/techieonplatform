@@ -193,27 +193,27 @@
                   <span class="text-sm text-gray-700">Lagos</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" name="country" value="Abeokuta" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <input type="radio" name="city" value="Abeokuta" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
                   <span class="text-sm text-gray-700">Abeokuta</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" name="country" value="Ibadan" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <input type="radio" name="city" value="Ibadan" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
                   <span class="text-sm text-gray-700">Ibadan</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" name="country" value="Abuja" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <input type="radio" name="city" value="Abuja" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
                   <span class="text-sm text-gray-700">Abuja</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" name="country" value="Port-Harcourt" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <input type="radio" name="city" value="Port-Harcourt" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
                   <span class="text-sm text-gray-700">Port-Harcourt</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" name="country" value="Ijebu-Ode" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <input type="radio" name="city" value="Ijebu-Ode" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
                   <span class="text-sm text-gray-700">Ijebu-Ode</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" name="country" value="Other" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <input type="radio" name="city" value="Other" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
                   <span class="text-sm text-gray-700">Others</span>
                 </label>
               </div>
@@ -662,19 +662,15 @@ function payWithPaystack() {
   let handler = PaystackPop.setup({
     // key: 'pk_live_001cc579a5f2776e0889a588c201afd796f7d291',
     key: 'pk_test_0de89e35f856e52b6a8a803962a86c3f2f6cf888',
-    email: getFormData()['email'],          // Replace with the user's email input dynamically if needed
-    amount: 25000 * 100,                  // Paystack accepts amount in kobo (10,000 Naira * 100)
-    currency: 'NGN',                      // Change to your preferred currency (e.g., GHS, USD)
-    ref: paymentReference, // Generates a unique reference
+    email: getFormData()['email'],          
+    amount: 25000 * 100,                  
+    currency: 'NGN',                      
+    ref: paymentReference, 
     callback: function(response) {
-      // This runs after a successful payment
-      // alert('Payment complete! Reference: ' + response.reference);
-      // TODO: Send the reference to your server to verify the transaction
       paymentSuccessfulStatus = "paid";
       GL_paymentReference = paymentReference;
     },
     onClose: function() {
-      // This runs if the user closes the payment modal
       paymentSuccessfulStatus = "cancelled";
       alert('Transaction was not completed, window closed.');
     }
