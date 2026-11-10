@@ -35,4 +35,19 @@ return [
         ],
     ],
 
+    'paystack' => [
+        'public_key' => env('PAYSTACK_PUBLIC_KEY'),
+        'secret_key' => env('PAYSTACK_SECRET_KEY'),
+        'base_url' => env('PAYSTACK_BASE_URL', 'https://api.paystack.co'),
+    ],
+
+    'sponsorship' => [
+        // Base sponsorship price per day, in USD.
+        'daily_rate_usd' => (float) env('SPONSOR_DAILY_RATE_USD', 1),
+        // NGN-per-USD rate used when the live rate cannot be fetched.
+        'usd_to_ngn_fallback' => (float) env('USD_TO_NGN_FALLBACK', 1600),
+        // How long (hours) to cache the live USD -> NGN rate.
+        'rate_cache_hours' => (int) env('USD_TO_NGN_CACHE_HOURS', 6),
+    ],
+
 ];

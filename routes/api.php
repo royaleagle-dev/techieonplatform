@@ -7,6 +7,7 @@ use App\Http\Controllers\Api\SolutionRequestController;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\UserPasswordController;
 use App\Http\Controllers\Api\UserController;
+use App\Http\Controllers\Api\SponsorshipController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,11 @@ use App\Http\Controllers\Api\UserController;
 Route::post('/applicants', [ApplicantController::class, 'store']);
 Route::post('/solution-requests', [SolutionRequestController::class, 'store']);
 Route::post('/login', [AuthController::class, 'login']);
+
+// Sponsorship payments (Paystack)
+Route::get('/sponsorships/rate', [SponsorshipController::class, 'rate']);
+Route::post('/sponsorships/initialize', [SponsorshipController::class, 'initialize']);
+Route::post('/sponsorships/verify', [SponsorshipController::class, 'verify']);
 
 
 // Protected routes (Requires Bearer token)

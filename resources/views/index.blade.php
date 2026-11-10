@@ -342,15 +342,18 @@
             Sponsor tech talents
           </span>
           <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
-            Sponsor talents<br />for $1/Day
+            Sponsor a talent<br />for just $1 a day
           </h2>
           <p class="mt-4 text-white/75 max-w-md text-sm leading-relaxed">
-            We're committed to help young less privilege across the globe including African countries or especially Africans. Let's put more appealing content that will arrest the interest of those that want to contribute.
+            One dollar a day keeps a young African in tech class. For the price of a coffee, you fund a full day of
+            training, mentorship and career support for a talented person who can't afford it. Sponsor a day, a week,
+            or a month — and help the next generation of African tech talent rise.
           </p>
-          <a href="#" class="mt-8 inline-flex self-start items-center gap-2 bg-white text-sponsor-purple font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition">
+          <a href="{{ route('sponsor') }}" class="mt-8 inline-flex self-start items-center gap-2 bg-brand-lime text-brand-dark font-semibold px-6 py-3 rounded-full hover:bg-brand-yellow transition whitespace-nowrap">
             Sponsor Now
             <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M7 17L17 7M17 7H7M17 7v10"/></svg>
           </a>
+          <p class="mt-4 text-xs text-white/50">100% of your sponsorship goes to the learner.</p>
         </div>
 
         <!-- Right imagee -->
