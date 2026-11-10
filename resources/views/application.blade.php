@@ -134,12 +134,16 @@
               </p>
               <div class="space-y-2.5">
                 <label class="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" name="preferred_start_date" value="2026-11-02" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
-                  <span class="text-sm text-gray-700">2 November 2026</span>
+                  <input type="radio" name="preferred_start_date" value="2026-12-07" required class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">7th December 2026</span>
                 </label>
                 <label class="flex items-center gap-3 cursor-pointer">
-                  <input type="radio" name="preferred_start_date" value="2027-02-28" required class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
-                  <span class="text-sm text-gray-700">28 February 2027</span>
+                  <input type="radio" name="preferred_start_date" value="2027-01-11" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">11th January 2027</span>
+                </label>
+                <label class="flex items-center gap-3 cursor-pointer">
+                  <input type="radio" name="preferred_start_date" value="2027-03-29" class="w-4 h-4 text-brand-dark focus:ring-brand-dark" />
+                  <span class="text-sm text-gray-700">29th March 2027</span>
                 </label>
               </div>
             </div>
